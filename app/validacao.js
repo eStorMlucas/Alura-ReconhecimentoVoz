@@ -2,10 +2,13 @@ function verificaValidadeChute(chute) {
     const numero = +chute
 
     if (seChuteInvalido(numero)) {
-        console.log("VALOR INVÁLIDO")
+        elementoChute.innerHTML += '<div>VALOR INVÁLIDO</div>'
     } else 
-        if (verificaNumeroMaiorMenor) {
-            console.log(`VALOR INVÁLIDO: O número precisar estar entre ${limiteValores[0]} e ${limiteValores[1]}`)
+        if (verificaNumeroMaiorMenor == false) {
+            elementoChute.innerHTML += `
+                VALOR INVÁLIDO: O número precisar estar entre 
+                ${limiteValores[0]} e ${limiteValores[1]}
+                `
     }
 }
 
