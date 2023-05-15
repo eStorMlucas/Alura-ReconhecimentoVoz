@@ -61,3 +61,8 @@ h3 {
     font-size: 1.6rem;
     margin-top: 6px;
 }
+
+.gameOver {
+    color: #fff;
+    margin-bottom: 20px;
+}
