@@ -1,6 +1,17 @@
 function verificaValidadeChute(chute) {
     const numero = +chute
 
+    // easter egg
+    if (chute == 'game over') {
+        document.body.style.backgroundColor = "#141314"
+        document.body.innerHTML = 
+        `
+            <h1 style="color: #fff"> GAME OVER </h1>
+            <button id="reiniciar" class="botao"> Jogar Novamente </button>
+        `
+        return 
+    }
+
     if (seChuteInvalido(numero)) {
         elementoChute.innerHTML += '<div>VALOR INVÁLIDO</div>'
         return
