@@ -10,5 +10,3 @@ elementoMenorValor.innerText = limiteValores[0]
 
 const elementoMaiorValor = document.querySelector('#valor-maior')
 elementoMaiorValor.innerText = limiteValores[1]
-
-console.log(`Número secreto é igual a: ${valorSorteio}`)

@@ -1,9 +1,7 @@
 const elementoChute = document.querySelector('#chute')
 
 //Suporte para funcionamento
-const SpeechRecognition = window.SpeechRecognition || webkitSpeechRecognition;
-const SpeechGrammarList = window.SpeechGrammarList || webkitSpeechGrammarList;
-const SpeechRecognitionEvent = window.SpeechRecognitionEvent || webkitSpeechRecognitionEvent;
+window.SpeechRecognition = window.SpeechRecognition || webkitSpeechRecognition;
 
 const recognition = new SpeechRecognition();
 recognition.lang = 'pt-br'
@@ -23,3 +21,5 @@ function exibeChute(chute) {
         <span class="box"> ${chute} </span>
     `
 }
+
+recognition.addEventListener('end', () => recognition.start())
