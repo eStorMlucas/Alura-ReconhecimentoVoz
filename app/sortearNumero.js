@@ -1,4 +1,4 @@
-const limiteValores = [1, 1000]
+const limiteValores = [11, 1000]
 const valorSorteio = sorteioNumero();
 
 function sorteioNumero() {
