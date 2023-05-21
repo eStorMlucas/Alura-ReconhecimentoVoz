@@ -23,3 +23,4 @@ Of course you will see some differences between the original code and my code an
 this happens because I implementeded the all the funcionalities by my way 
 
 ## That's it, enjoy the Game and find the easter egg :D
+be sure you're using Google Chrome browser to all the things go well
